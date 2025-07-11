@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Smooth gradient */
+    color: #fff;
+    line-height: 1.6;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Container for the whole page */
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    max-width: 1000px;
+    width: 90%;
+    margin-top: 20px;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 3.2em;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Title Styling */
+.og_title, .sum_title {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Original Text and Summarized Text Styling */
+p {
+    font-size: 1.1em;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    word-wrap: break-word; /* Ensures text stays inside containers */
+}
+
+/* Flexbox container to arrange the two sections side by side */
+.container > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.container p {
+    flex: 1;
+    margin: 10px;
+    word-wrap: break-word;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .container {
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .og_title, .sum_title {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .og_title, .sum_title {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+}

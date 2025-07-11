@@ -1,0 +1,212 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Smooth gradient */
+    color: #fff;
+    line-height: 1.5;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Navbar Styling */
+.nav-bar {
+    width: 100%;
+    background-color: #1f1f1f; /* Dark background for navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 0; /* Reduced padding for smaller navbar */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Align the title left and the buttons right */
+    align-items: center;
+    padding: 0 20px; /* Add some padding to the sides */
+}
+
+nav .head {
+    font-size: 2.2em; /* Reduced font size */
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-buttons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em; /* Slightly smaller font size */
+    padding: 10px 18px; /* Reduced padding for smaller button size */
+    margin-left: 20px;
+    border-radius: 30px;
+    background-color: #6a11cb;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-buttons a:hover {
+    background-color: #2575fc;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Container */
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    margin-top: 100px; /* To avoid overlap with navbar */
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Subheading Styling */
+h3 {
+    font-size: 1.6em;
+    color: #fff;
+    margin-bottom: 12px;
+    font-weight: 500;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.1em;
+    color: #ddd;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Results Card Styling */
+.results-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+}
+
+.results-card p {
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.results-card .dt {
+    font-weight: bold;
+    color: #6a11cb;
+}
+
+.results-card .tr {
+    font-weight: bold;
+    color: #2575fc;
+}
+
+/* Button Styling */
+a.back-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background-color: #2575fc;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a.back-button:hover {
+    background-color: #6a11cb;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.4em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 25px;
+    }
+
+    .results-card p {
+        font-size: 1em;
+    }
+
+    .back-button {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .results-card p {
+        font-size: 0.95em;
+    }
+
+    .back-button {
+        padding: 10px 20px;
+        font-size: 0.95em;
+    }
+}

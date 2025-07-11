@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='style4.css')}}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <nav>
+            <h1 class="head">Text Alchemy</h1>
+            <div class="nav-buttons">
+                <a href="/">Home</a>
+                <a href="/sum1">Summarizer</a>
+                <a href="/translate">Translator</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Translator</h1>
+        
+        <p>Here is your translated text !</p>
+
+        <!-- Output Section -->
+        <div class="results-card">
+           
+            <p><strong>Translation:</strong> <span class="tr">{{tr}}</span></p>
+        </div>
+        <a href="/" class="back-button">Go Back</a>
+    </div>
+
+</body>
+</html>

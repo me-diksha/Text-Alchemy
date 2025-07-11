@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Alchemy</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='style.css')}}">
+</head>
+<body>
+    <div class="nav-bar">
+        <nav>
+            <h1 class="head">Text Alchemy</h1>
+            <div class="nav-buttons">
+                <a href="/">Home</a> 
+                <a href="/sum1">Summarizer</a> 
+                <a href="/translate">Translator</a> 
+            </div>
+        </nav>
+    </div>
+
+    <div class="content-container">
+        <div class="text-section">
+            <p>Need to quickly understand or share content in different languages? Our Summarize and Translate tool makes it easy! Simply upload your text, and we’ll generate a concise summary and translate it into your preferred language. Save time, break language barriers, and get the essential information you need in seconds! Try it now!</p>
+            <a class="back-button" href="/sum1">Try Now ~ </a>
+        </div>
+        <div class="image-section">
+            <img src="{{ url_for('static', filename='WELCOME!.jpg') }}" alt="Welcome Image" class="image">
+        </div>
+    </div>
+</body>
+</html>
+<section class="hero">
+    <h1>Welcome to Text Alchemy</h1>
+    <p>Transform your text with our powerful tools</p>
+</section>

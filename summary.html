@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>analyze</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='style2.css')}}">
+</head>
+<body>
+    <h1> Result</h1>
+    <div class="container " >
+        <p class=" og_title col">Original Text</p>
+        <p>{{og_txt}}</p> 
+       
+    </div>
+
+    <div class="container " >
+     <p class="sum_title col">Summarized Text</p>
+        <p>{{summary}}</p>
+        <a href="/">Home</a> 
+    </div>
+</body>
+</html>

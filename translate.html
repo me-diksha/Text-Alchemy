@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='style3.css')}}">
+</head>
+<body>
+    <div class="nav-bar">
+        <nav>
+            <h1 class="head">Text Alchemy</h1>
+            <div class="nav-buttons">
+                <a href="/">Home</a> 
+                <a href="/sum1">Summarizer</a> 
+                <a href="/translate">Translator</a> 
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1>Translator</h1>
+        <h3>WELCOME!!</h3>
+        <p>Translate in any language</p>
+        <form action="/translat" method="POST">
+            <textarea name="rawtext" class="form-control" rows="5" placeholder="Enter your data"></textarea>
+            <br><br>
+            <label for="dest">Select destination language</label>
+            <select name="dest" id="dest" class="form-control">
+                <option value="hi">Hindi</option>
+                <option value="en">English</option>
+                <option value="tr">Turkish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="id">Indonesian</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+                <option value="nl">Dutch</option>
+                <option value="pa">Punjabi</option>
+                
+            </select>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

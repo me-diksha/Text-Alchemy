@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Smooth gradient */
+    color: #fff;
+    line-height: 1.6;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin-top: 70px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    width: 100%;
+    background-color: #1f1f1f; /* Dark background for navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Align the title left and the buttons right */
+    align-items: center;
+    padding: 0 20px; /* Add some padding to the sides */
+}
+
+nav .head {
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-buttons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 12px 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+    background-color: #6a11cb;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-buttons a:hover {
+    background-color: #2575fc;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Layout */
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Align text and image */
+    max-width: 1200px;
+    width: 90%;
+    margin-top: 80px; /* Added margin to avoid overlap with navbar */
+    padding: 10px;
+    gap: 50px; /* Increased gap between text and image */
+    align-items: center;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.text-section {
+    flex: 1;
+    text-align: left;
+    max-width: 600px; /* Limit the text section width */
+    font-size: 1.1em; /* Adjust font size for readability */
+    line-height: 1.8; /* Improve line spacing for better readability */
+}
+
+.text-section p {
+    margin-bottom: 20px;
+    color: #f4f4f4; /* Softer text color for readability */
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto; /* Ensure image maintains its aspect ratio */
+}
+
+.image:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+/* Button Styling */
+a.back-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background-color: #2575fc;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a.back-button:hover {
+    background-color: #6a11cb;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .text-section {
+        text-align: center;
+    }
+
+    .image {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-section {
+        font-size: 1em;
+    }
+
+    .image {
+        max-width: 95%;
+    }
+}

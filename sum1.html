@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarizer</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='style1.css')}}">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="nav-bar">
+        <nav>
+            <h1 class="head">Text Alchemy</h1>
+            <div class="nav-buttons">
+                <a href="/">Home</a> 
+                <a href="/sum1">Summarizer</a> 
+                <a href="/translate">Translator</a> 
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content Section -->
+    
+    <div class="container"> 
+        <h1>Summarizer</h1>
+        <p>Summarize your big to big text in sec !</p>
+        <form action="\analyze" method="POST">
+            <textarea name="rawtext" class="form-control" rows="6" placeholder="Enter your data"></textarea>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
